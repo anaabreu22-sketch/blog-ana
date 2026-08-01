@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
-<style>
-header {
-background-color: #183C63;
-color: #FFFFFF;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-padding: 16px;
-}
-main {
-background-color: #FFFFFF;
-color: #183C63;
-max-width: 800px;
-margin: 0 auto;
-padding: 16px;
-}
-article{
-display: flex;
-}
-img {
-width: 80px;
-height: 80px;
-}
-
-.artigo-autor {
-font-weight: bold;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #183C63;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        main {
+            background-color: #FFFFFF;
+            color: #183C63;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+        article {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .artigo-conteudo {
+            display: flex;
+            flex-direction: column;
+        }
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-</header>
-<main>
+
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
+
+    <main>
+        <article>
+            <img src="https://placeholder.com" alt="Imagem do artigo">
+            <div class="artigo-conteudo">
+                <h2>Título do Primeiro Post</h2>
+                <p>Este é o resumo do seu artigo de tecnologia...</p>
+                <span class="artigo-autor">Por: Seu Nome</span>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
